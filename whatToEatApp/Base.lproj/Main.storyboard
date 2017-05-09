@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LfB-kM-umz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--タイプ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whatToEatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qR9-G2-fIz">
+                                <rect key="frame" x="125.5" y="251.5" width="125" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzS-HK-do0">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Breakfast">
+                                            <color key="titleColor" red="0.8328205958549223" green="0.27972787748650746" blue="0.30481649199112876" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0Vc-FM-vsU" kind="show" id="rWz-NM-8jC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvE-qA-KYB">
+                                        <rect key="frame" x="21" y="58" width="83" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Lunch">
+                                            <color key="titleColor" red="0.24558547684235618" green="0.72095612046632129" blue="0.13820241070264755" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="yQR-93-8Iq" kind="show" id="3gq-sF-Jc1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-gk-rxa">
+                                        <rect key="frame" x="18.5" y="116" width="88" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Dinner">
+                                            <color key="titleColor" red="0.49113206688200067" green="0.24360230127756574" blue="0.72095612046632129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="UIe-ak-HiL" kind="show" id="6VD-tx-N6Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qR9-G2-fIz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jdk-cf-ZLo"/>
+                            <constraint firstItem="qR9-G2-fIz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPo-8t-K7S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="タイプ" id="YrG-1f-15z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Breakfast-->
+        <scene sceneID="MaZ-6I-RCU">
+            <objects>
+                <viewController id="0Vc-FM-vsU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XmD-7K-Jed"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Bv-wn-gpb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B84-8J-dZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Ox-06-XlN">
+                                <rect key="frame" x="172" y="280.5" width="31" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf3-O9-UlK">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="和"/>
+                                        <connections>
+                                            <segue destination="foV-6W-N3Z" kind="show" id="S2D-Xl-RGg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-yY-P8X">
+                                        <rect key="frame" x="0.0" y="58" width="31" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="洋"/>
+                                        <connections>
+                                            <segue destination="bHv-dn-QqL" kind="show" id="jLU-8B-qXJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Ox-06-XlN" firstAttribute="centerY" secondItem="B84-8J-dZL" secondAttribute="centerY" id="lF2-4W-K6E"/>
+                            <constraint firstItem="0Ox-06-XlN" firstAttribute="centerX" secondItem="B84-8J-dZL" secondAttribute="centerX" id="pRi-Aj-tGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Breakfast" id="RJJ-RF-ur1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3tZ-d0-FNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="-547"/>
+        </scene>
+        <!--洋-->
+        <scene sceneID="isf-Xa-NEc">
+            <objects>
+                <viewController id="bHv-dn-QqL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rVi-cG-FGZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vKf-6T-K4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uxl-Xf-ZlV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast_you" highlightedImage="breakfast_wa" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-HO-Hv6">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pGi-HO-Hv6" secondAttribute="trailing" id="5Cr-qa-cVR"/>
+                            <constraint firstItem="pGi-HO-Hv6" firstAttribute="leading" secondItem="uxl-Xf-ZlV" secondAttribute="leadingMargin" id="SH5-Fa-Hjp"/>
+                            <constraint firstItem="vKf-6T-K4g" firstAttribute="top" secondItem="pGi-HO-Hv6" secondAttribute="bottom" id="h3e-qG-fAm"/>
+                            <constraint firstItem="pGi-HO-Hv6" firstAttribute="top" secondItem="rVi-cG-FGZ" secondAttribute="bottom" id="ifC-hW-eXY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="洋" id="WX6-Dj-cRy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDf-3c-X9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926" y="-495"/>
+        </scene>
+        <!--Lunch-->
+        <scene sceneID="Xoh-ap-XUk">
+            <objects>
+                <viewController id="yQR-93-8Iq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wbo-ov-szk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ECN-cV-9ZR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="epB-aG-txw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3th-JQ-iwR">
+                                <rect key="frame" x="126.5" y="280.5" width="122" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-ul-zLa">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="あっさり"/>
+                                        <connections>
+                                            <segue destination="wYX-wV-jhg" kind="show" id="Tq4-qx-yYM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-ub-3Lr">
+                                        <rect key="frame" x="0.0" y="58" width="122" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="がっつり"/>
+                                        <connections>
+                                            <segue destination="XOd-dm-MD0" kind="show" id="DAi-3P-Xd7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3th-JQ-iwR" firstAttribute="centerX" secondItem="epB-aG-txw" secondAttribute="centerX" id="uhJ-ek-aZq"/>
+                            <constraint firstItem="3th-JQ-iwR" firstAttribute="centerY" secondItem="epB-aG-txw" secondAttribute="centerY" id="yOG-wx-Xei"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lunch" id="w8T-AT-38C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQu-N7-DW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="139"/>
+        </scene>
+        <!--あっさり-->
+        <scene sceneID="RnP-fI-eqV">
+            <objects>
+                <viewController id="wYX-wV-jhg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r4p-n5-7K0"/>
+                        <viewControllerLayoutGuide type="bottom" id="0OH-KH-5Ns"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ESK-xT-jPe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch_light" translatesAutoresizingMaskIntoConstraints="NO" id="pAk-AP-T0K">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pAk-AP-T0K" firstAttribute="leading" secondItem="ESK-xT-jPe" secondAttribute="leadingMargin" id="7iw-PP-bgr"/>
+                            <constraint firstItem="pAk-AP-T0K" firstAttribute="top" secondItem="r4p-n5-7K0" secondAttribute="bottom" id="gBX-9l-Hkp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pAk-AP-T0K" secondAttribute="trailing" id="kXN-Iz-fyX"/>
+                            <constraint firstItem="0OH-KH-5Ns" firstAttribute="top" secondItem="pAk-AP-T0K" secondAttribute="bottom" id="vpz-3U-os3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="あっさり" id="EVr-xm-cxG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4H-Y8-TRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046" y="113"/>
+        </scene>
+        <!--がっつり-->
+        <scene sceneID="xgj-Hp-Qz1">
+            <objects>
+                <viewController id="XOd-dm-MD0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WUT-x4-Pvw"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ye-rQ-39G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcS-qX-avZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch_heavy" translatesAutoresizingMaskIntoConstraints="NO" id="q4U-8n-NA4">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q4U-8n-NA4" firstAttribute="leading" secondItem="EcS-qX-avZ" secondAttribute="leadingMargin" id="5hb-2v-2MF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q4U-8n-NA4" secondAttribute="trailing" id="QAj-3x-A4m"/>
+                            <constraint firstItem="1Ye-rQ-39G" firstAttribute="top" secondItem="q4U-8n-NA4" secondAttribute="bottom" id="V1J-V0-bl6"/>
+                            <constraint firstItem="q4U-8n-NA4" firstAttribute="top" secondItem="WUT-x4-Pvw" secondAttribute="bottom" id="a4P-4N-MCD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="がっつり" id="v3o-sp-7Uy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tdL-NM-urI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926" y="171"/>
+        </scene>
+        <!--Dinner-->
+        <scene sceneID="2I6-et-27z">
+            <objects>
+                <viewController id="UIe-ak-HiL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNS-MQ-paV"/>
+                        <viewControllerLayoutGuide type="bottom" id="H7Y-KY-zHS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nwe-7a-ZMS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sJq-KR-kDR">
+                                <rect key="frame" x="157" y="251.5" width="61" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6O-V5-9GK">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="和"/>
+                                        <connections>
+                                            <segue destination="nU3-fZ-zPf" kind="show" id="ifW-G0-nuE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdr-Y8-Dco">
+                                        <rect key="frame" x="0.0" y="58" width="61" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="洋"/>
+                                        <connections>
+                                            <segue destination="UJv-jM-z2l" kind="show" id="pLP-f7-heQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dh-82-r9v">
+                                        <rect key="frame" x="0.0" y="116" width="61" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="中華"/>
+                                        <connections>
+                                            <segue destination="Oel-c3-Xym" kind="show" id="OWb-Ss-64m"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sJq-KR-kDR" firstAttribute="centerX" secondItem="Nwe-7a-ZMS" secondAttribute="centerX" id="Din-4S-dvU"/>
+                            <constraint firstItem="sJq-KR-kDR" firstAttribute="centerY" secondItem="Nwe-7a-ZMS" secondAttribute="centerY" id="hPI-5n-x4C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dinner" id="DBM-RG-0cp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6x-eu-rWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="1005"/>
+        </scene>
+        <!--和-->
+        <scene sceneID="YEh-ku-z8h">
+            <objects>
+                <viewController id="nU3-fZ-zPf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mNl-Kk-a9j"/>
+                        <viewControllerLayoutGuide type="bottom" id="S1m-xn-yTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k1E-N7-nt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dinner_wa" translatesAutoresizingMaskIntoConstraints="NO" id="Uo1-Wh-saa">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uo1-Wh-saa" firstAttribute="leading" secondItem="k1E-N7-nt2" secondAttribute="leadingMargin" id="2ct-pG-4EM"/>
+                            <constraint firstItem="Uo1-Wh-saa" firstAttribute="top" secondItem="mNl-Kk-a9j" secondAttribute="bottom" id="EEF-IE-C2R"/>
+                            <constraint firstItem="S1m-xn-yTU" firstAttribute="top" secondItem="Uo1-Wh-saa" secondAttribute="bottom" id="XVO-BR-v7T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uo1-Wh-saa" secondAttribute="trailing" id="wFD-uF-7cm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="和" id="bna-2W-FXd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUL-dL-Gf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046" y="946"/>
+        </scene>
+        <!--洋-->
+        <scene sceneID="fzh-Kv-bHT">
+            <objects>
+                <viewController id="UJv-jM-z2l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CnA-L8-MJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="2oj-YV-Ku1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kss-Go-BJI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dinner_you" translatesAutoresizingMaskIntoConstraints="NO" id="9iL-3s-6ok">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9iL-3s-6ok" firstAttribute="top" secondItem="CnA-L8-MJn" secondAttribute="bottom" id="0HA-tO-0Tn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9iL-3s-6ok" secondAttribute="trailing" id="YOq-Nl-NYQ"/>
+                            <constraint firstItem="9iL-3s-6ok" firstAttribute="leading" secondItem="kss-Go-BJI" secondAttribute="leadingMargin" id="hmV-ub-jh0"/>
+                            <constraint firstItem="2oj-YV-Ku1" firstAttribute="top" secondItem="9iL-3s-6ok" secondAttribute="bottom" id="x1d-9C-FIi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="洋" id="7KI-FG-KYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr7-qv-1DL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926" y="1004"/>
+        </scene>
+        <!--中-->
+        <scene sceneID="tIn-nf-RoZ">
+            <objects>
+                <viewController id="Oel-c3-Xym" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DVS-hf-1XF"/>
+                        <viewControllerLayoutGuide type="bottom" id="RN1-Cf-tGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v8N-7c-Tlo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dinner_ch" translatesAutoresizingMaskIntoConstraints="NO" id="oIg-Gi-D3N">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oIg-Gi-D3N" firstAttribute="leading" secondItem="v8N-7c-Tlo" secondAttribute="leadingMargin" id="1bL-dc-JUI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oIg-Gi-D3N" secondAttribute="trailing" id="9T6-yc-cZO"/>
+                            <constraint firstItem="RN1-Cf-tGR" firstAttribute="top" secondItem="oIg-Gi-D3N" secondAttribute="bottom" id="Dxb-Px-bb1"/>
+                            <constraint firstItem="oIg-Gi-D3N" firstAttribute="top" secondItem="DVS-hf-1XF" secondAttribute="bottom" id="hDs-kV-Fg5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="中" id="EEq-cg-4w6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75D-Zg-VvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4770" y="1084"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yqL-sT-E9i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LfB-kM-umz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKA-qd-qu0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rgA-Ks-IUU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4g-SG-J84" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="139"/>
+        </scene>
+        <!--和-->
+        <scene sceneID="6Jy-Zk-3Ft">
+            <objects>
+                <viewController id="1mx-Tj-5bL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VAv-zf-wUm"/>
+                        <viewControllerLayoutGuide type="bottom" id="NsN-ZC-UlV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1X1-Di-fpC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="和" id="1yg-od-d9v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jrf-Yt-YZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046" y="-609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fwA-iO-Cxt">
+            <objects>
+                <viewController id="B5f-De-gZu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nGJ-79-0gN"/>
+                        <viewControllerLayoutGuide type="bottom" id="GmT-nv-zN1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Um-iL-INJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Of-71-pS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3046" y="-609"/>
+        </scene>
+        <!--和食朝食-->
+        <scene sceneID="FP7-Qw-J7a">
+            <objects>
+                <viewController id="foV-6W-N3Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8gy-1s-Nom"/>
+                        <viewControllerLayoutGuide type="bottom" id="yry-9b-dk5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GWZ-mh-uLg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast_wa" highlightedImage="breakfast_you" translatesAutoresizingMaskIntoConstraints="NO" id="jLr-QS-8T4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jLr-QS-8T4" firstAttribute="leading" secondItem="GWZ-mh-uLg" secondAttribute="leading" id="2wp-Af-UGE"/>
+                            <constraint firstItem="yry-9b-dk5" firstAttribute="top" secondItem="jLr-QS-8T4" secondAttribute="bottom" id="AMV-fj-qXY"/>
+                            <constraint firstItem="jLr-QS-8T4" firstAttribute="top" secondItem="GWZ-mh-uLg" secondAttribute="top" id="bSM-JK-hsw"/>
+                            <constraint firstAttribute="trailing" secondItem="jLr-QS-8T4" secondAttribute="trailing" id="bTq-J6-8kK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="和食朝食" id="EFG-d1-ku5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88f-6S-LEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045.5999999999999" y="-609.44527736131943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breakfast_wa" width="640" height="422"/>
+        <image name="breakfast_you" width="300" height="240"/>
+        <image name="dinner_ch" width="640" height="360"/>
+        <image name="dinner_wa" width="1600" height="1200"/>
+        <image name="dinner_you" width="1920" height="576"/>
+        <image name="lunch_heavy" width="640" height="402"/>
+        <image name="lunch_light" width="640" height="424"/>
+    </resources>
+</document>
